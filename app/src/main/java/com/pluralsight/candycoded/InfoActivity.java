@@ -22,9 +22,10 @@ public class InfoActivity extends AppCompatActivity {
                 load(uri).
                 into(candyStoreImageView);
 
+
     }
 
-    private void createMapIntent(View view){
+    public void createMapIntent(View view){
         Uri uri = Uri.parse("geo:0,0?q=618 E South St Orlando, FL 32801");
         Intent mapIntent = new Intent(Intent.ACTION_VIEW, uri);
         mapIntent.setPackage("com.google.android.apps.maps");
@@ -33,7 +34,7 @@ public class InfoActivity extends AppCompatActivity {
         }
     }
 
-    private void createPhoneIntent(View view){
+    public void createPhoneIntent(View view){
         Intent phoneIntent = new Intent(Intent.ACTION_DIAL);
         phoneIntent.setData(Uri.parse("tel:0123456789"));
         startActivity(phoneIntent);
