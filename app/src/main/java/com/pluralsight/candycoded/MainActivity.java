@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
     // ***
-    // TODO - Task 1 - Show Store Information Activity
+    // TODO - Task 1 Show Store Information Activity
     // ***
 
     private void addCandiesToDatabase(Candy[] candies) {
